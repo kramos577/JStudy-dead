@@ -8,6 +8,8 @@ from flask import render_template
 #all ... are ~     and words with more than one meanign are in an array    and there are no capital letters excpet the pronoun I 　　and　katakana is in hiragana
 from app import app
 from ch1vocab import ch1V
+from ch3vocab import ch3V
+from ch3kanji import ch3K
 
 
 @app.route('/')
@@ -24,11 +26,12 @@ def lessons():
 @app.route('/kanji')
 def kanji():
     return render_template("kanji.html",
-                           title='Kanji')
+                           title='Kanji',
+                           kanji=ch3K)
 
 
 @app.route('/vocab')
 def vocab():
     return render_template("vocab.html",
                            title='Vocabulary',
-                           chap=ch1V) #appending is list1 + list2 and just appends in order
+                           chap=ch3V) #appending is list1 + list2 and just appends in order

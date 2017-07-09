@@ -1,0 +1,26 @@
+<!--encoding: utf-8-->
+{% extends "base.html" %}
+{% block content %}
+<!--Pink headline bar with "Vocab!" in it-->
+<section id="inner-headline">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<h2 class="pageTitle">Chapter 4 Vocab!</h2>
+			</div>
+		</div>
+	</div>
+	</section>
+
+
+	    <h1>HEYYY!</h1>
+	    <div><p> LET;s DO some VOcab PRacticeeeee
+	      <br><br><br>
+	    </p></div>
+
+
+	{% for word in chap %}
+	    <div><p>{{ word.word }} translates to {{ word.romaji }} and it is {{ word.kana }} in kana and {{ word.hiragana }} in hiragana.</p></div>
+	{% endfor %}
+
+{% endblock %}

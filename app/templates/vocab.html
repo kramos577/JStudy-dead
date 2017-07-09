@@ -19,8 +19,15 @@
 	    </p></div>
 
 
-	{% for word in chap %}
-	    <div><p>{{ word.word }} translates to {{ word.romaji }} and it is {{ word.kana }} in kana and {{ word.hiragana }} in hiragana.</p></div>
-	{% endfor %}
+<div class="chapters">
+	<a href="vocab/ch1" class="btn btn-primary waves-effect waves-dark">Chapter 1</a>
+	<a href="vocab/ch2" class="btn btn-primary waves-effect waves-dark">Chapter 2</a>
+	<a href="vocab/ch3" class="btn btn-primary waves-effect waves-dark">Chapter 3</a>
+	<a href="vocab/ch4" class="btn btn-primary waves-effect waves-dark">Chapter 4</a>
+</div>
+
+
+
+
 
 {% endblock %}

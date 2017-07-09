@@ -1,5 +1,5 @@
 #   encoding: utf-8
-ch2V = [{'word':['this','this one'] 'romaji':'kore', 'kana':u'これ', 'hiragana':u'これ'},
+ch2V = [{'word':['this','this one'], 'romaji':'kore', 'kana':u'これ', 'hiragana':u'これ'},
         {'word':['that', 'that one'], 'romaji':'sore', 'kana':u'それ', 'hiragana':u'それ'},
         {'word':['that (over there)', 'that one (over there)'], 'romaji':'are', 'kana':u'あれ', 'hiragana':u'あれ'},
         {'word':'which', 'romaji':'dore', 'kana':u'どれ', 'hiragana':u'どれ'},
@@ -14,7 +14,7 @@ ch2V = [{'word':['this','this one'] 'romaji':'kore', 'kana':u'これ', 'hiragana
         {'word':'who', 'romaji':'dare', 'kana':u'だれ', 'hiragana':u'だれ'},
         {'word':'delicious', 'romaji':'oishii', 'kana':u'美味しい', 'hiragana':u'おいしい'},
         {'word':'fish', 'romaji':'sakana', 'kana':u'魚', 'hiragana':u'さかな'},
-        {'word':'pork cutlet', 'romaji':'tonkatsu', 'kana':u'とんかつ', 'hiragana':u'とんかつ'},　
+        {'word':'pork cutlet', 'romaji':'tonkatsu', 'kana':u'とんかつ', 'hiragana':u'とんかつ'},
         {'word':'meat', 'romaji':'niku', 'kana':u'肉', 'hiragana':u'にく'},
         {'word':'menu', 'romaji':'menu', 'kana':u'メニュー', 'hiragana':u'メニュー'},
         {'word':'vegetable', 'romaji':'yasai', 'kana':u'野菜', 'hiragana':u'やさい'},

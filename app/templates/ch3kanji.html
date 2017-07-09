@@ -1,0 +1,31 @@
+<!--encoding: utf-8-->
+{% extends "base.html" %}
+{% block content %}
+<!--Pink headline bar with "Kanji" in it-->
+<section id="inner-headline">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<h2 class="pageTitle">Chapter 3 Kanji</h2>
+			</div>
+		</div>
+	</div>
+	</section>
+
+<!--Start of text-->
+    <h1>sup!</h1>
+    <div><p> This is where cool kanji stuff will happen =)
+
+      <br><br>
+    </p>
+    </div>
+
+		{% for char in kanji %}
+				<div><p>{{ char.kanji }} is {{ char.eng }} in english, can be read as {{ char.hiraganap }} or {{ char.romajip }}, and can be read as
+					{% for word in char.words %} {{ word.word }} as {{ word.kanji }} which is {{ word.hiragana }} in hiragana and even {{ word.romaji }} for romaji users, {% endfor %}
+				</p></div>
+		{% endfor %}
+
+
+
+{% endblock %}

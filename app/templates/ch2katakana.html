@@ -1,0 +1,30 @@
+<!--encoding: utf-8-->
+{% extends "base.html" %}
+{% block content %}
+<!--Pink headline bar with "Kanji" in it-->
+<section id="inner-headline">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<h2 class="pageTitle">Katakana</h2>
+			</div>
+		</div>
+	</div>
+	</section>
+
+<!--Start of text-->
+    <h1>It;s tiiiiiime for sooooooome katakanaaaaaaaaaaaaaaaa</h1>
+    <div><p> This is where cool kanji stuff will happen =)
+
+      <br><br>
+    </p>
+    </div>
+
+		{% for char in kanji %}
+				<div><p>{{ char.char }} is {{ char.katakana }}
+				</p></div>
+		{% endfor %}
+
+
+
+{% endblock %}
